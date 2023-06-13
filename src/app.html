@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cypress Test Page</title>
+    <script src="https://cdn.jsdelivr.net/npm/cypress@8.6.0/dist/cypress.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="wrapper">
+    <div id="header" class="bottom-space">
+        <h1>Cypress Test Page</h1>
+
+        <div id="message" class="welcome-message">
+            <p>Welcome to the Cypress test page!</p>
+        </div>
+    </div>
+
+    <form id="login-form" class="bottom-space">
+        <label data-test="username-label" for="username">Username:</label>
+        <br>
+        <input data-test="username-input" type="text" id="username" name="username">
+        <br>
+        <label data-test="password-label" for="password">Password:</label>
+        <br>
+        <input data-test="password-input" type="password" id="password" name="password">
+        <br>
+        <button data-test="submit-button" type="submit">Login</button>
+    </form>
+
+    <div id="todo-list" class="bottom-space">
+        <p style="text-align: left">My Todo-list:</p>
+        <ul>
+            <li>Task 1</li>
+            <li>Task 2</li>
+            <li>Task 3</li>
+        </ul>
+    </div>
+
+    <table id="user-table">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>John Doe</td>
+            <td>john.doe@example.com</td>
+        </tr>
+        <tr>
+            <td>Jane Smith</td>
+            <td>jane.smith@example.com</td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

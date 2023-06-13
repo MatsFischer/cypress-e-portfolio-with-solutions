@@ -1,0 +1,48 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+.bottom-space {
+    margin-bottom: 50px;
+}
+
+#header {
+    color: mediumseagreen;
+}
+
+#login-form {
+    border: black 2px solid;
+    padding: 50px;
+}
+
+input {
+    margin-bottom: 8px;
+}
+
+button {
+    padding: 4px 12px 4px 12px;
+    background-color: lightskyblue;
+    border: none;
+    border-radius: 4px;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+li {
+    margin: 4px;
+}
+
+th, td {
+    border: black 2px solid;
+    padding: 4px;
+}
