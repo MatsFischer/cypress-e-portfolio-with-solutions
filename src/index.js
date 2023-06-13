@@ -4,4 +4,5 @@ function showContent() {
     document.getElementById('login-success-message').classList.remove('hide');
     document.getElementById('todo-list').classList.remove('hide');
     document.getElementById('user-table').classList.remove('hide');
+    document.getElementById('admin-table').classList.remove('hide');
 }
