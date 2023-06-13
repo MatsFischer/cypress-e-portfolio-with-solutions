@@ -27,3 +27,9 @@
 Cypress.Commands.add('getByDataTestSelector', (selector) => {
     return cy.get(`[data-test="${selector}"]`)
 });
+
+Cypress.Commands.add('login', (username, password) => {
+    cy.getByDataTestSelector('username-input').type(username)
+    cy.getByDataTestSelector('password-input').type(password)
+    cy.getByDataTestSelector('submit-button').click()
+})
