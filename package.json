@@ -1,0 +1,22 @@
+{
+  "name": "cypress-e-portfolio-with-solutions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatsFischer/cypress-e-portfolio-with-solutions.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MatsFischer/cypress-e-portfolio-with-solutions/issues"
+  },
+  "homepage": "https://github.com/MatsFischer/cypress-e-portfolio-with-solutions#readme",
+  "devDependencies": {
+    "cypress": "^12.14.0"
+  }
+}
