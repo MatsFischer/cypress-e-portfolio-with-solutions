@@ -1,11 +1,11 @@
 {
   "users": [
     {
-      "name": "john_doe",
+      "username": "john_doe",
       "password": "password123"
     },
     {
-      "name": "styx_lmao",
+      "username": "styx_lmao",
       "password": "pommes12"
     }
   ]
