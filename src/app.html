@@ -3,6 +3,7 @@
 <head>
     <title>Cypress Test Page</title>
     <script src="https://cdn.jsdelivr.net/npm/cypress@8.6.0/dist/cypress.min.js"></script>
+    <script src="index.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -15,7 +16,7 @@
         </div>
     </div>
 
-    <form id="login-form" class="bottom-space">
+    <form name="form" id="login-form" class="bottom-space">
         <label data-test="username-label" for="username">Username:</label>
         <br>
         <input data-test="username-input" type="text" id="username" name="username">
@@ -24,10 +25,14 @@
         <br>
         <input data-test="password-input" type="password" id="password" name="password">
         <br>
-        <button data-test="submit-button" type="submit">Login</button>
+        <button data-test="submit-button" type="button" onclick="showContent()">Login</button>
     </form>
 
-    <div id="todo-list" class="bottom-space">
+    <div id="login-success-message" class="bottom-space hide">
+        <p>Login successfull!</p>
+    </div>
+
+    <div id="todo-list" class="bottom-space hide">
         <p style="text-align: left">My Todo-list:</p>
         <ul>
             <li>Task 1</li>
@@ -36,7 +41,7 @@
         </ul>
     </div>
 
-    <table id="user-table">
+    <table id="user-table" class="hide">
         <tr>
             <th>Name</th>
             <th>Email</th>
