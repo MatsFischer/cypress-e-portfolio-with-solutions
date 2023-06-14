@@ -62,7 +62,7 @@ describe('Home Page', () => {
         })
     })
 
-    context('User table', () => {
+    context('Tables', () => {
         beforeEach(() => {
             cy.get('@usersData').then((usersJson) => {
                 let { username, password } = usersJson.users[0]
@@ -79,7 +79,4 @@ describe('Home Page', () => {
                 .should('contain', 'John Doe')
         })
     })
-
-    // Add more Cypress test cases here
-
 })
